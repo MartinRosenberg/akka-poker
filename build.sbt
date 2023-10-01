@@ -4,7 +4,7 @@ version := "0.1"
 
 scalaVersion := "2.12.8"
 
-mainClass in (Compile, run) := Some("main.WebServer")
+Compile / run / mainClass := Some("main.WebServer")
 
 libraryDependencies ++= Seq(
   "org.json4s" %% "json4s-native" % "3.6.4",
